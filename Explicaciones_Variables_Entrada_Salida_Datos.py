@@ -20,4 +20,5 @@ nombre = input("Dime tu nombre:\n") #\n Permite hacer un salto de linea
 edad = input("Dime tu edad: ")
 
 
+
 print("Buenos dias", nombre, "tu edad es", edad)
