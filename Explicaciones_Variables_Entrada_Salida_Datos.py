@@ -5,7 +5,7 @@
 #real -- float
 #Cadenas de caracteres -- str
 #Lógico -- bool
-
+'''
 nombre="Juan Francisco"
 edad = 25
 mayorOmenorEdad=False
@@ -22,3 +22,13 @@ edad = input("Dime tu edad: ")
 
 
 print("Buenos dias", nombre, "tu edad es", edad)
+'''
+#Bucle while
+i=0
+bandera = True
+num=0
+num = int(input("Dime un número: "))
+
+while (i <= 10):
+    print(num, " * ", i, " = ", num*i)
+    i = i + 1

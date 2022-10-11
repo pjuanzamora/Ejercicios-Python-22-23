@@ -18,5 +18,7 @@ tele = input("Dime su telefono: ")
 vNombres.append(nombre)
 vTelefonos.append(tele)
 
-print(vNombres)
-print(vTelefonos)
+print("El telefono de ",vNombres[1], "es ", vTelefonos)
+
+
+# El telefono de juan es 1
