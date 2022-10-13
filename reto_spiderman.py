@@ -4,7 +4,7 @@
 puntoA = int(input("Dime el punto A: "))
 puntoB = int(input("Dime el punto B: "))
 
-rutaA = puntoA + abs(puntoB - puntoA)
+rutaA = puntoA + (puntoB - puntoA)
 print(f"Ruta A cuesta {rutaA}")
 rutaB = puntoB + abs(puntoA - puntoB)
 print(f"Ruta B cuesta {rutaB}")
