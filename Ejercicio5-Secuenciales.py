@@ -1,6 +1,3 @@
-from pathlib import PureWindowsPath
-
-
 usuSecreto = "juan"
 passSecreto = "12"
 
