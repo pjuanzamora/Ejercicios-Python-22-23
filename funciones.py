@@ -1,5 +1,6 @@
 #Funciones definidas por el usuario
 from pytube import YouTube
+from pytube import Playlist
 
 
 def imprimirHola(nombre:str, apellido:str):
@@ -18,6 +19,13 @@ def descargaCancion(url:str):
     cancion = youtube.streams.get_audio_only()
     cancion.download()
 
+def descargarLista(url:str):
+    playlist = Playlist(url)
+
+    for cancion in playlist.videos:
+        print("Descargando cancion: ", cancion.title)
+        cancion.streams.get_audio_only().download("canciones/")
+        print("****************\n")
 
 #Calcular Area y Perimetro
 
@@ -39,9 +47,6 @@ def calcularAreaYperimetro(lado1:int,lado2:int):
     return vDatos
 
 #Principal
-lado1 = int(input("Dime el valor del lado1"))
-lado2 = int(input("Dime el valor del lado2"))
 
-vNum = calcularAreaYperimetro(lado1,lado2)
-print("El area es:", vNum[0])
-print("El perimetro es:", vNum[1])
+url = "https://www.youtube.com/watch?v=A_g3lMcWVy0&list=PLSFitF4B6yNS82pcRx5XvD1PB6m8lIs5J"
+descargarLista(url)
