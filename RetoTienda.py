@@ -4,22 +4,15 @@ import flet as ft
 
 
 def main(page: ft.Page):
-    page.title="Tkinder buagggg - Flet :-)"
+    page.title="Tienda Juanfra"
     
-    
-    def cambiarColor(e):
-        t.value= textField_Nombre.value
-        page.update()
+      #Componente Texto
+    rotulo_tienda = ft.Text(value="La tienda de Juanfra, todo al mejor precio", color="red", size=60)
+    page.add(rotulo_tienda)
+    text_selecion = ft.Text(value="Seleccione sus productos", size=40)
+    page.add(text_selecion)
 
-
-
-    #Componente Texto
-    t = ft.Text(value="Introducción a Flet", color="red", size=20)
-    page.add(t) # add hace dos cosas 1-Añadir 2-Actualizar
-
-    #Componente Boton
-    bt = ft.FloatingActionButton(icon=ft.icons.ADD, on_click=cambiarColor)
-    page.add(bt)
+   
 
     textField_Nombre = ft.TextField(label="Nombre", hint_text="Escribe tu nombre")
     #page.add(textField_Nombre)
